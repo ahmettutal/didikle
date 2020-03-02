@@ -17,6 +17,6 @@ public class DidikModel {
 
     private String url;
 
-    private String didikle;
+    private String didik;
 
 }

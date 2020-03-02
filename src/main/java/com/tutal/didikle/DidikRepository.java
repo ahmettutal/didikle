@@ -10,6 +10,4 @@ public interface DidikRepository extends CrudRepository<DidikModel, Long> {
 
     List<DidikModel> findByUrl(String url);
 
-    DidikModel findById(long id);
-
 }

@@ -2,6 +2,8 @@ package com.tutal.didikle;
 
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 public class CommentResource {
 
@@ -12,11 +14,11 @@ public class CommentResource {
     }
 
     @GetMapping
-    public String get() {
+    public List<DidikModel> getAll(@RequestParam String url) {
 
-        System.out.println("Comment push successful...");
+        System.out.println("getAll");
 
-        return "200 OK";
+        return didikService.findByUrl(url);
     }
 
     @GetMapping("/{id}")
@@ -28,13 +30,9 @@ public class CommentResource {
     }
 
     @PostMapping("/didikle")
-    public DidikModel shareComment(@RequestParam String url, @RequestParam String didik) {
+    public DidikModel shareComment(@RequestBody DidikModel didikModel) {
 
         System.out.println("didikking start");
-
-        DidikModel didikModel = new DidikModel();
-        didikModel.setUrl(url);
-        didikModel.setDidikle(didik);
 
         final DidikModel save = didikService.save(didikModel);
 
