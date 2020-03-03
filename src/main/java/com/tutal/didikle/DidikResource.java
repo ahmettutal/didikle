@@ -5,20 +5,20 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-public class CommentResource {
+public class DidikResource {
 
     private DidikService didikService;
 
-    public CommentResource(DidikService didikService) {
+    public DidikResource(DidikService didikService) {
         this.didikService = didikService;
     }
 
-    @GetMapping
-    public List<DidikModel> getAll(@RequestParam String url) {
+    @PostMapping("find-by-url")
+    public List<DidikModel> getAll(@RequestBody DidikRequest request) {
 
-        System.out.println("getAll");
+        System.out.println("getAll request: " + request);
 
-        return didikService.findByUrl(url);
+        return didikService.findByUrl(request.getUrl());
     }
 
     @GetMapping("/{id}")
@@ -36,7 +36,7 @@ public class CommentResource {
 
         final DidikModel save = didikService.save(didikModel);
 
-        System.out.println("didikking end with id: " + save.getId());
+        System.out.println("didikking end with: " + save);
 
         return save;
     }
