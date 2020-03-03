@@ -13,7 +13,7 @@ public class DidikResource {
         this.didikService = didikService;
     }
 
-    @PostMapping("find-by-url")
+    @PostMapping("/find-by-url")
     public List<DidikModel> getAll(@RequestBody DidikRequest request) {
 
         System.out.println("getAll request: " + request);
