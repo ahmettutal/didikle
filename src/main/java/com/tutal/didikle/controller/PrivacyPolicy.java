@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PrivacyPolicy {
 
-    @GetMapping({"/privacy-policy"})
+    @GetMapping("/privacy-policy")
     public String hello() {
 
         return "privacy-policy";
