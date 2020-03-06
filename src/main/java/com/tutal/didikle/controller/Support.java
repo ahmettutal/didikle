@@ -4,12 +4,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class PrivacyPolicy {
+public class Support {
 
-    @GetMapping("/privacy-policy")
-    public String privacyPolicy() {
+    @GetMapping("/support")
+    public String support() {
 
-        return "privacy-policy";
+        return "support";
     }
 
 }

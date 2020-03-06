@@ -5,6 +5,6 @@
     <title>Tutal Tech</title>
 </head>
 <body>
-<h2>Bu bir gang sitesidir</h2>
+<h2>Contact: <a class="text-link" href="mailto:quisemre@hotmail.com">quisemre@hotmail.com</a></h2>
 </body>
 </html>

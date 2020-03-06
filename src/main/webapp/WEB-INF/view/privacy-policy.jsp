@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Tutal Tech</title>
+    <title>Privacy Policy - Tutal Tech</title>
 </head>
 <body>
 
