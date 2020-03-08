@@ -1,4 +1,4 @@
-package com.tutal.didikle;
+package com.tutal.didikle.api;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

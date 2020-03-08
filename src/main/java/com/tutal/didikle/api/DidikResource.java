@@ -1,4 +1,4 @@
-package com.tutal.didikle;
+package com.tutal.didikle.api;
 
 import org.springframework.web.bind.annotation.*;
 
